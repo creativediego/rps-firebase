@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script defer src="js/rps.js"></script>
+    <title>Document</title>
+    <style>
+        div {
+            border: black dotted 1px;
+            padding: 3rem;
+        }
+        
+        #chat-display {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body class="container text-center">
+    <div id="start-screen" class="text-center">
+        <form class="form-inline">
+
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="player-name" class="sr-only">Name</label>
+                <input type="Name" class="form-control" id="player-name" placeholder="Name">
+            </div>
+            <button id="start" type="submit" class="btn btn-primary mb-2">Start</button>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <p id="player-one" value="">Waiting for Player 1</p>
+            <div id="player-one-choices">
+
+            </div>
+        </div>
+        <div class="col-4" id="playthrough">Playthrough Message</div>
+        <div class="col-4">
+            <p id="player-two" value="">Waiting for Player 2</p>
+            <div id="player-one-choices">
+
+            </div>
+        </div>
+        <div class="col-12" id="chat">
+            <div id="chat-display">
+
+            </div>
+            <form class="form-">
+
+                <div class=" form-group ">
+
+                    <input type="Name" class="form-control" id="chat-message" placeholder="enter chat message here">
+                    <span><button id="send-chat" type="submit " class="btn btn-primary mb-2 ">Send</button></span>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
